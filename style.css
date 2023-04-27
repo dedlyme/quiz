@@ -1,0 +1,26 @@
+html{
+    --krasa:rgb(32, 46, 240);
+    --header-height:100px;
+}
+body{
+    margin: 0;
+
+}
+header{
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--krasa);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:2;
+}
+main{
+    height:var(--header-height);
+}
+html[data-theme="light"]{
+    --krasa: orange;
+}
+html[data-theme="dark"]{
+    --krasa: purple;
+}
